@@ -13,3 +13,8 @@
 .App-link {
   color: #61dafb;
 }
+
+code {
+    color: black;
+    background-color: gray;
+}

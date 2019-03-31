@@ -1,25 +1,38 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 class RegexComponent extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            len: null,
-            string: null
+            accepted: this.props.expr('') ? 'ACCEPT' : 'REJECT'
         }
     }
 
-    lenFive(s) {
-        this.setState({len: s.length, string: s});
+    regexFunc(s) {
+        let accepted;
+        this.props.expr(s) ? accepted = 'ACCEPT' : accepted = 'REJECT';
+        this.setState({accepted: accepted});
     }
 
     render() {
+        let {accepted} = this.state;
         return (
           <div>
-              <input type={'text'} onChange={(e) => this.lenFive(e.target.value)}/>
-              <div>{`${this.state.len}\n${this.state.string}`}</div>
+              <p>{this.props.language}</p>
+              <div>
+                  <code>{this.props.label}</code>
+              </div>
+              <input type={'text'} onChange={(e) => this.regexFunc(e.target.value)}/>
+              <div>{accepted}</div>
           </div> );
 
     }
 }
+
+RegexComponent.propTypes = {
+    expr: PropTypes.func,
+    label: PropTypes.string,
+    language: PropTypes.string
+};
 export default RegexComponent;
