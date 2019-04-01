@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import RegexComponent from "./RegexComponent";
+import RegexExampleComponent from "./RegexExampleComponent";
 
 class App extends Component {
     stringOfLengthAtLeastFive(s) {
@@ -18,6 +19,11 @@ class App extends Component {
         return re.test(s);
     }
 
+    onlyLettersAndNumbers(s) {
+        let re = /[^0-9a-zA-Z]*/g;
+        return s.replace(re, '');
+    }
+
     render() {
         return (
             <div className="App">
@@ -30,6 +36,9 @@ class App extends Component {
                 <RegexComponent expr={this.validEmailAddress}
                                 language={'L = {w | w is a valid email address}'}
                                 label={'/\\w+@\\w+.\\w+/'}/>
+                <RegexExampleComponent expr={this.onlyLettersAndNumbers}
+                                       language={'Only letters and numbers'}
+                                       label={'[^0-9a-zA-Z]*'}/>
             </div>
         );
     }
