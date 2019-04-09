@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import './RegexComponent.css'
 
 class RegexComponent extends Component {
     constructor(props) {
@@ -18,13 +19,11 @@ class RegexComponent extends Component {
     render() {
         let {accepted} = this.state;
         return (
-          <div>
+          <div className={'regex-block'}>
               <p>{this.props.language}</p>
-              <div>
-                  <code>{this.props.label}</code>
-              </div>
+              <code>{this.props.label}</code>
               <input type={'text'} onChange={(e) => this.regexFunc(e.target.value)}/>
-              <div>{accepted}</div>
+              <div className={this.state.accepted}>{accepted}</div>
           </div> );
 
     }
