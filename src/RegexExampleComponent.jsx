@@ -6,19 +6,18 @@ class RegexExampleComponent extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            word: 'Enter a word',
-            filteredWord: 'Enter a word'
+            word: 'Enter a string',
+            filteredWord: 'Enter a string',
         }
     }
 
     regexFunc(s) {
         let filteredWord;
-        if (s) {
+        if(s) {
             filteredWord = this.props.expr(s);
-
         } else {
-            s = 'Enter a word';
-            filteredWord = 'Enter a word';
+            filteredWord = 'Enter a string';
+            s = 'Enter a string';
         }
         this.setState({word: s, filteredWord: filteredWord});
     }
@@ -28,7 +27,7 @@ class RegexExampleComponent extends Component {
             <div className={'regex-block'}>
                 <p>{this.props.language}</p>
                 <code>{this.props.label}</code>
-                <input type={'text'} onChange={(e) => this.regexFunc(e.target.value)}/>
+                <input type={'text'} onChange={(e) => this.regexFunc(e.target.value)} placeholder={'Enter a string of characters'}/>
                 <div>{this.state.word}</div>
                 <div>{this.state.filteredWord}</div>
             </div> );

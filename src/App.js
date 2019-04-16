@@ -30,6 +30,11 @@ class App extends Component {
         return re.test(s);
     }
 
+    validPassword(s) {
+        let re = /(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.{8,})/;
+        return re.test(s);
+    }
+
     render() {
         let sigma = '\u03A3';
         let union = '\u222A';
@@ -38,6 +43,7 @@ class App extends Component {
         let plus = '\u207A';
         let dupWordLang = `L = { (${sigma} ${union} x)* w (${sigma} ${union} x)* x${plus} w (${sigma} ${union} x)* | w ${elementOf} ${sigma} and x ${notElementOf} ${sigma} } \n Strings with a substring duplicated and separated by a non-alphanumeric character`;
         let lettersAndNumbers = `L = {w | w ${elementOf} ${sigma}* where ${sigma} = {0-9 ${union} a-z ${union} A-Z } } \n Filters strings and removes non-alphanumeric characters`;
+        let validPassword = 'L = {w | w has a lowercase and uppercase letter, a number and |w| > 7} \nAccepts valid passwords';
         return (
             <div className="App">
                 <Introduction/>
@@ -53,6 +59,9 @@ class App extends Component {
                 <RegexMatchingComponent expr={this.duplicateWords}
                                         language={dupWordLang}
                                         label={'/\\b(\\w+)\\b(?=.*\\1)/'}/>
+                <RegexMatchingComponent expr={this.validPassword}
+                                        language={validPassword}
+                                        label={'/(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.{8,})/'}/>
                 <RegexExampleComponent expr={this.onlyLettersAndNumbers}
                                        language={lettersAndNumbers}
                                        label={'[^0-9a-zA-Z]*'}/>

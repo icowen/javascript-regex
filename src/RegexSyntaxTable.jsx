@@ -107,7 +107,7 @@ class RegexSyntaxTable extends Component {
                     <td>Matches x only if it is not followed by y</td>
                 </tr>
                 <tr>
-                    <td><code>(?&#60;=y)x)</code></td>
+                    <td><code>(?&#60;=y)x</code></td>
                     <td>Lookbehind- Matches x only if x is preceded by y</td>
                     <td><code>(?&#60;!y)x</code></td>
                     <td>Negated Lookbehind- Matches x only if x is not preceded by y</td>
