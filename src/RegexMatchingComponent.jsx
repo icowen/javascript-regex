@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import './RegexComponent.css'
+import './RegexMatchingComponent.css'
 
-class RegexComponent extends Component {
+class RegexMatchingComponent extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -29,9 +29,9 @@ class RegexComponent extends Component {
     }
 }
 
-RegexComponent.propTypes = {
+RegexMatchingComponent.propTypes = {
     expr: PropTypes.func,
     label: PropTypes.string,
     language: PropTypes.string
 };
-export default RegexComponent;
+export default RegexMatchingComponent;

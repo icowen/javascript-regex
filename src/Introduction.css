@@ -1,0 +1,18 @@
+header {
+     color: #61dafb;
+     font-size: calc(10px + 5vmin);
+     margin: 8px;
+     text-align: center;
+ }
+
+p {
+    margin: 2vw;
+}
+
+.Introduction {
+    text-align: left;
+}
+
+.Introduction .intro{
+    font-size: calc(10px + 3vmin);
+}
