@@ -23,7 +23,7 @@ class RegexMatchingComponent extends Component {
               <p>{this.props.language}</p>
               <code>{this.props.label}</code>
               <input type={'text'} onChange={(e) => this.regexFunc(e.target.value)}/>
-              <div className={this.state.accepted}>{accepted}</div>
+              <div className={accepted}>{accepted}</div>
           </div> );
 
     }

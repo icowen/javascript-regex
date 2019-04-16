@@ -3,6 +3,7 @@ import './App.css';
 import RegexMatchingComponent from "./RegexMatchingComponent";
 import RegexExampleComponent from "./RegexExampleComponent";
 import Introduction from "./Introduction";
+import CustomRegexComponent from "./CustomRegexComponent";
 
 class App extends Component {
     stringOfLengthAtLeastFive(s) {
@@ -65,6 +66,7 @@ class App extends Component {
                 <RegexExampleComponent expr={this.onlyLettersAndNumbers}
                                        language={lettersAndNumbers}
                                        label={'[^0-9a-zA-Z]*'}/>
+                <CustomRegexComponent/>
             </div>
         );
     }
