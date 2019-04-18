@@ -4,6 +4,7 @@ import './RegexSyntaxTable.css';
 class RegexSyntaxTable extends Component {
     render() {
         return <div className={'regex-syntax-table'}>
+            <h1>Regex Syntax</h1>
             <table>
                 <colgroup>
                     <col className={'symbol'}/>
@@ -128,6 +129,7 @@ class RegexSyntaxTable extends Component {
                     </tr>
                 </tbody>
             </table>
+            <h1>Basic Regex Examples</h1>
         </div>;
 
     }

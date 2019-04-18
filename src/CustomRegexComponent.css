@@ -1,0 +1,16 @@
+.regex-input {
+    display: inline-flex;
+    width: 100%;
+    padding: 8px;
+}
+
+.regex-input input {
+    width: 100%;
+    float: right;
+}
+
+.regex-input p {
+    padding-top: 8px;
+    margin: 0 16px 0 0;
+    white-space: nowrap;
+}

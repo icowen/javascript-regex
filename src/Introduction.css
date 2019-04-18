@@ -16,3 +16,7 @@ p {
 .Introduction .intro{
     font-size: calc(10px + 3vmin);
 }
+
+.Introduction code {
+    margin: 8px;
+}
