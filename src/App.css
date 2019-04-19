@@ -1,20 +1,141 @@
 .App {
-  text-align: center;
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    text-align: center;
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.nav-link{
+    padding: 16px 2%;
+    float: left;
+}
+
+.NavBar {
+    float: top;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #61dafb;
+    color: black;
 }
 
 code {
     color: black;
-    background-color: gray;
+    background-color: 	gray;
+}
+
+h2 {
+    color: #61dafb;
+    font-size: calc(10px + 7vmin);
+    margin: 8px;
+    text-align: center;
+}
+
+input {
+    padding: 8px;
+    font-size: calc(10px + 3vmin);
+    border: 2px solid #61dafb;
+    border-radius: 4px;
+    margin: 8px;
+}
+
+code {
+    padding: 4px;
+    white-space: nowrap;
+    margin: 8px;
+}
+
+p{
+    white-space:pre-wrap;
+    margin: 8px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 99%;
+    margin: 8px;
+}
+
+td, th {
+    border: 2px solid white;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+    color: black;
+}
+
+tr:nth-child(odd) {
+    background-color: lightblue;
+    color: black;
+}
+
+td:nth-child(even) {
+    width: 40%;
+}
+
+.regex-block {
+    margin: 4vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 5vmin);
+}
+
+.empty {
+    color: darkgray;
+    font-style: italic;
+}
+
+.ACCEPT {
+    background-color: green;
+}
+
+.REJECT {
+    background-color: red;
+}
+
+.regex-input {
+    display: inline-flex;
+    width: 100%;
+    padding: 8px;
+}
+
+.regex-input p {
+    padding-top: 8px;
+    margin: 0 16px 0 0;
+    white-space: nowrap;
+}
+
+.regex-input input {
+    width: 100%;
+    float: right;
+}
+
+.Introduction {
+    text-align: left;
+    font-size: calc(10px + 3vmin);
+}
+
+.Introduction p{
+   margin: 16px 8px 16px 8px;
+}
+
+.Introduction .intro code {
+    margin: 8px;
+    padding: 0;
+}
+
+.regex-syntax-table code {
+    background-color: lightslategray;
+    padding: 4px;
+    white-space: nowrap;
 }

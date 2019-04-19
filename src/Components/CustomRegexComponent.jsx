@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import './CustomRegexComponent.css';
 
 class CustomRegexComponent extends Component {
     constructor(props) {
@@ -36,7 +35,7 @@ class CustomRegexComponent extends Component {
     render() {
         return (
             <div className={'regex-block'}>
-                <p>{'Create your own regex using JavaScript!'}</p>
+                <h2>{'Create Custom Regex'}</h2>
                 <div className={'regex-input'}>
                     <p>{'REGEX: '}</p>
                     <input type={'text'} onChange={(e) => this.onSubmit(e.target.value)} placeholder={'Enter regex'}/>

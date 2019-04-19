@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
-import './RegexSyntaxTable.css';
 
 class RegexSyntaxTable extends Component {
     render() {
         return <div className={'regex-syntax-table'}>
-            <h1>Regex Syntax</h1>
+            <h2>Regex Syntax</h2>
             <table>
                 <colgroup>
                     <col className={'symbol'}/>
@@ -124,12 +123,11 @@ class RegexSyntaxTable extends Component {
                             <li><i>n</i> is a positive integer</li>
                             <li>Back reference to last substring matching the <i>n<sup>th</sup></i> parenthetical</li>
                         </td>
-                        <td></td>
-                        <td></td>
+                        <td> </td>
+                        <td> </td>
                     </tr>
                 </tbody>
             </table>
-            <h1>Basic Regex Examples</h1>
         </div>;
 
     }

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './Introduction.css'
 import RegexSyntaxTable from "./RegexSyntaxTable";
 
 class Introduction extends Component {
@@ -7,7 +6,7 @@ class Introduction extends Component {
         return (
             <div className={'Introduction'}>
                 <div className={'intro'}>
-                    <header><b>JavaScript Regular Expressions (RegEx)</b></header>
+                    <h2><b>JavaScript Regular Expressions (RegEx)</b></h2>
                     <p> This website is designed to show basic JavaScript RegEx for matching
                         strings, and filtering strings.</p>
                     <p>JavaScript RegEx is contained between two backslashes or
