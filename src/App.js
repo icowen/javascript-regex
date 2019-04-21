@@ -6,6 +6,7 @@ import NavBar from "./Components/NavBar";
 import RegexSyntaxTable from "./Components/RegexSyntaxTable";
 import ExamplesContainer from "./Components/Examples/ExamplesContainer";
 import CustomRegexComponent from "./Components/CustomRegexComponent";
+import HistoryComponent from "./Components/HistoryComponent";
 
 class App extends Component {
     render() {
@@ -15,7 +16,7 @@ class App extends Component {
                     <NavBar />
                     <Switch>
                         <Route path={"/"} component={Introduction} exact={true}/>
-                        <Route path={"/history"} component={Introduction} exact={true}/>
+                        <Route path={"/history"} component={HistoryComponent} exact={true}/>
                         <Route path={"/syntax"} component={RegexSyntaxTable} exact={true}/>
                         <Route path={"/usage"} component={ExamplesContainer} exact={true}/>
                         <Route path={"/custom"} component={CustomRegexComponent} exact={true}/>
