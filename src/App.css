@@ -143,8 +143,21 @@ td:nth-child(even) {
 
 .history {
     text-align: left;
+    font-size: calc(10px + 3vmin);
+    padding: 0 8% 8% 8%;
 }
 
 .history h3 {
     text-align: center;
+    font-size: calc(10px + 5vmin);
+}
+
+.custom {
+    margin: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 5vmin);
 }

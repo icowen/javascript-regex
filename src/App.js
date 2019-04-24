@@ -5,7 +5,7 @@ import './App.css';
 import NavBar from "./Components/NavBar";
 import RegexSyntaxTable from "./Components/RegexSyntaxTable";
 import ExamplesContainer from "./Components/Examples/ExamplesContainer";
-import CustomRegexComponent from "./Components/CustomRegexComponent";
+import CustomComponent from "./Components/CustomComponent";
 import HistoryComponent from "./Components/HistoryComponent";
 
 class App extends Component {
@@ -19,7 +19,7 @@ class App extends Component {
                         <Route path={"/history"} component={HistoryComponent} exact={true}/>
                         <Route path={"/syntax"} component={RegexSyntaxTable} exact={true}/>
                         <Route path={"/usage"} component={ExamplesContainer} exact={true}/>
-                        <Route path={"/custom"} component={CustomRegexComponent} exact={true}/>
+                        <Route path={"/custom"} component={CustomComponent} exact={true}/>
                         <Redirect to="/" />
                     </Switch>
                 </Router>

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-class CustomRegexComponent extends Component {
+class CustomComponent extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -34,7 +34,7 @@ class CustomRegexComponent extends Component {
 
     render() {
         return (
-            <div className={'regex-block'}>
+            <div className={'custom'}>
                 <h2>{'Create Custom Regex'}</h2>
                 <div className={'regex-input'}>
                     <p>{'REGEX: '}</p>
@@ -51,9 +51,9 @@ class CustomRegexComponent extends Component {
     }
 }
 
-CustomRegexComponent.propTypes = {
+CustomComponent.propTypes = {
     expr: PropTypes.func,
     label: PropTypes.string,
     language: PropTypes.string
 };
-export default CustomRegexComponent;
+export default CustomComponent;
