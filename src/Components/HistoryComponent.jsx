@@ -14,9 +14,9 @@ class HistoryComponent extends Component {
                 The common Unix command “grep” was a result of early use of regular expressions for searching text files.
                 Grep stands for “search Globally for Regular Expressions and Print.”
                 From there regular expressions were mainly used for pattern matching in text files and in compilers.
-                Perl was one of the first programming languages that implemented complicated regular expressions.
 
                 <h3>Regular Expressions in Programming Languages</h3>
+                Perl was one of the first programming languages that implemented complicated regular expressions.
                 Today, many programming languages have regular expressions built in or have a regular expression library.
                 JavaScript has RegExp objects that create a pattern which can match strings. These objects also have different methods for using the regex.
 
