@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import RegexSyntaxTable from "./RegexSyntaxTable";
+import SyntaxComponent from "./SyntaxComponent";
 
-class Introduction extends Component {
+class IntroductionComponent extends Component {
     render() {
         return (
             <div className={'Introduction'}>
@@ -19,10 +19,10 @@ class Introduction extends Component {
                     <p>The replace method replaces the matched regular expression with the new string:
                         <br/><code>string.replace(regex, "new string")</code></p>
                 </div>
-                <RegexSyntaxTable/>
+                <SyntaxComponent/>
             </div> );
 
     }
 }
 
-export default Introduction;
+export default IntroductionComponent;

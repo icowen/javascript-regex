@@ -11,6 +11,7 @@ class NavBar extends Component {
                         <Nav.Link href="/">Home</Nav.Link>
                         <Nav.Link href="/history">History</Nav.Link>
                         <Nav.Link href="/syntax">Syntax</Nav.Link>
+                        <Nav.Link href="/flags">Flags</Nav.Link>
                         <Nav.Link href="/usage">Usage</Nav.Link>
                         <Nav.Link href="/custom">Custom</Nav.Link>
                     </Nav>

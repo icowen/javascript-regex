@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Redirect, Route, Switch } from 'react-router-dom';
-import Introduction from "./Components/Introduction";
+import IntroductionComponent from "./Components/IntroductionComponent";
 import './App.css';
 import NavBar from "./Components/NavBar";
-import RegexSyntaxTable from "./Components/RegexSyntaxTable";
+import SyntaxComponent from "./Components/SyntaxComponent";
 import ExamplesContainer from "./Components/Examples/ExamplesContainer";
 import CustomComponent from "./Components/CustomComponent";
 import HistoryComponent from "./Components/HistoryComponent";
+import FlagsComponent from "./Components/FlagsComponent";
 
 class App extends Component {
     render() {
@@ -15,9 +16,10 @@ class App extends Component {
                 <Router className={'App'}>
                     <NavBar />
                     <Switch>
-                        <Route path={"/"} component={Introduction} exact={true}/>
+                        <Route path={"/"} component={IntroductionComponent} exact={true}/>
                         <Route path={"/history"} component={HistoryComponent} exact={true}/>
-                        <Route path={"/syntax"} component={RegexSyntaxTable} exact={true}/>
+                        <Route path={"/syntax"} component={SyntaxComponent} exact={true}/>
+                        <Route path={"/flags"} component={FlagsComponent} exact={true}/>
                         <Route path={"/usage"} component={ExamplesContainer} exact={true}/>
                         <Route path={"/custom"} component={CustomComponent} exact={true}/>
                         <Redirect to="/" />

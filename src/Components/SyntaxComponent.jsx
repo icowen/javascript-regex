@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 
-class RegexSyntaxTable extends Component {
+class SyntaxComponent extends Component {
     render() {
         return <div className={'regex-syntax-table'}>
-            <h2>Regex Syntax</h2>
+            <h2>Syntax</h2>
             <table>
                 <colgroup>
                     <col className={'symbol'}/>
@@ -133,4 +133,4 @@ class RegexSyntaxTable extends Component {
     }
 }
 
-export default RegexSyntaxTable;
+export default SyntaxComponent;
