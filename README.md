@@ -1,4 +1,5 @@
 # JavaScript Regex
+## Site no longer is hosted due to heroku project limits
 ## Visit the website at: [https://javascript-regex.herokuapp.com/](https://javascript-regex.herokuapp.com/ "JavaScript Regex")
 This project demonstrates how to use JavaScript regex, the benefits of it, and where it is commonly used today.
 
